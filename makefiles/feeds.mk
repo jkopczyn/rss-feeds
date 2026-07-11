@@ -65,6 +65,13 @@ feeds_goodfire: ## Generate RSS feed for Goodfire Research
 	$(Q)uv run feed_generators/goodfire_blog.py
 	$(call print_success,Goodfire feed generated)
 
+.PHONY: feeds_timaeus
+feeds_timaeus: ## Generate RSS feed for Timaeus Research
+	$(call check_venv)
+	$(call print_info,Generating Timaeus feed)
+	$(Q)uv run feed_generators/timaeus_blog.py
+	$(call print_success,Timaeus feed generated)
+
 .PHONY: feeds_transluce
 feeds_transluce: ## Generate RSS feed for Transluce Research
 	$(call check_venv)

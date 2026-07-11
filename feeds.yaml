@@ -120,6 +120,11 @@ feeds:
     type: requests
     blog_url: https://www.deeplearning.ai/the-batch/
 
+  timaeus:
+    script: timaeus_blog.py
+    type: requests
+    blog_url: https://timaeus.co/research
+
   transluce:
     script: transluce_blog.py
     type: requests
