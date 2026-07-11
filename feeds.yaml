@@ -75,6 +75,11 @@ feeds:
     type: requests
     blog_url: https://www.eleuther.ai/papers
 
+  far_ai:
+    script: far_ai_blog.py
+    type: requests
+    blog_url: https://www.far.ai/publications
+
   goodfire:
     script: goodfire_blog.py
     type: requests
